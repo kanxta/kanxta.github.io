@@ -2,7 +2,7 @@ window.onload = () => {
     let elem = document.getElementsByTagName("p");
     let br = document.createElement("br");
 
-    elem.forEach(e => {
-        e.parentNode.insertBefore(br, e.nextElementSibling);
-    });
+    for( var i = 0; i < elem.length; i++  ){
+        elem[i].parentNode.insertBefore(br, e.nextElementSibling);
+    }
 }

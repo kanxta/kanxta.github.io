@@ -25,3 +25,16 @@ header .headline {
     display: inline-block;
     margin: 0 20px;
 }
+
+h1 {
+    display: block;
+    margin: 0,0,0,0;
+}
+
+p {
+    display: block;
+}
+
+img {
+    width: 100%;
+}

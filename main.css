@@ -214,11 +214,10 @@ header {
       width: 100%;
     }
   }
-  
-  body {
-    margin: 0;
-    padding: 0;
-  }
+body {
+margin: 0;
+padding: 0;
+}
 
 h1 {
     display: block;
@@ -230,5 +229,22 @@ p {
 }
 
 img {
-    width: 100%;
+    width: 50%;
 }
+
+main {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+@media screen and (max-width: 767px) {
+    img {
+        width: 100%;
+    }
+    main {
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+  }

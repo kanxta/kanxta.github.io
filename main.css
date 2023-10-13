@@ -1,43 +1,224 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
-body {
-    margin: 0;
-    font-family: 'Noto Sans JP', sans-serif;
-}
+/* header */
 
 header {
-    font-family: 'Noto Sans JP', sans-serif;
-    line-height: normal;
-    height: 10vh;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
     width: 100%;
+    padding: 20px 0;
+    background: #eee;
+  }
+  header .inner {
+    position: relative;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  /* .logo */
+  
+  header .logo {
+    position: relative;
+    width: 100px;
+    margin: 0;
     padding: 0;
-    background-color: #337079;
-    color: white;
-}
-
-header .nav-bar {
-    margin-right: 0;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-header .headline {
-    line-height: 10vh;
-    float: left;
-    font-size: 5vh;
-}
-
-.nav-list {
-    line-height: 10vh;
-    float: left;
+  }
+  header .logo a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  @media screen and (max-width: 767px) {
+    header .logo {
+      padding: 0;
+    }
+    header .logo a {
+    }
+  }
+  
+  /* scroll */
+  
+  header {
+    transition: height 0.4s cubic-bezier(0.34, 0.615, 0.4, 0.985);
+  }
+  header.scroll {
+    height: 60px;
+    position: fixed;
+    z-index: 9999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  header .logo {
+    transition: width 0.4s cubic-bezier(0.34, 0.615, 0.4, 0.985);
+  }
+  header.scroll .logo {
+    width: 70px;
+  }
+  
+  /* header-navi-box */
+  
+  header .navi {
+    margin: 0 0 0 auto;
+    padding: 0;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
     list-style: none;
-}
-
-.nav-list-item {
+  }
+  header .navi li {
+    margin: 5px 0 5px 40px;
+  }
+  header .navi li:first-child {
+    margin-left: 0;
+  }
+  header .navi li a {
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #333;
+  }
+  header .navi li a:hover {
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 767px) {
+    header .navi {
+      display: none;
+    }
+  }
+  
+  /* open-button */
+  
+  .sp-navi-toggle {
+    display: none;
+    margin: auto 0;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 40px;
+    width: 16px;
+    height: 25px;
+    transition: all 0.4s;
+    color: #464646;
+    border: none;
+    outline: none;
+    background: none;
+    -webkit-appearance: unset;
+  }
+  .sp-navi-toggle .menu,
+  .sp-navi-toggle .close {
+    position: absolute;
+    bottom: 0;
+    left: -50%;
+    display: block;
+    width: 34px;
+    height: 11px;
+  }
+  .sp-navi-toggle .close {
+    display: none;
+  }
+  .sp-navi-toggle .bar {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #464646;
+  }
+  .sp-navi-toggle .bar:nth-of-type(1) {
+    top: 0;
+  }
+  .sp-navi-toggle .bar:nth-of-type(2) {
+    top: 5px;
+  }
+  .sp-navi-toggle .bar:nth-of-type(3) {
+    top: 10px;
+  }
+  
+  /* close-button */
+  
+  html.sidebar-is-open .sp-navi-toggle .bar:nth-of-type(1) {
+    top: 5px;
+    transform: rotate(45deg);
+  }
+  html.sidebar-is-open .sp-navi-toggle .bar:nth-of-type(2) {
+    top: 5px;
+    transform: rotate(-45deg);
+  }
+  html.sidebar-is-open .sp-navi-toggle .bar:nth-of-type(3) {
+    display: none;
+  }
+  html.sidebar-is-open .sp-navi-toggle .menu {
+    display: none;
+  }
+  html.sidebar-is-open .sp-navi-toggle .close {
+    display: block;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .sp-navi-toggle{
+      display: block;
+    }
+  }
+  
+  /* sp-navi */
+  
+  .sp-navi-box {
+    display: none;
+  }
+  .sp-navi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     list-style: none;
-    display: inline-block;
-    margin: 0 5vw;
-}
+    width: 100%;
+    height: 100vh;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+  .sp-navi li {
+    padding: 20px 0;
+  }
+  .sp-navi li a {
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  .sp-navi li a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 767px) {
+    html.sidebar-is-open .sp-navi-box {
+      display: block;
+    }
+    html.sidebar-is-open {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      overflow: hidden;
+      width: 100%;
+    }
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
 
 h1 {
     display: block;

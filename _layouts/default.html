@@ -5,18 +5,23 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
     <script src="/main.js"></script>
     <header>
-        <h1 class="headline">暇人Blog</h1>
-        <ul class="nav-bar">
-            <li class="nav-list-item"><a href="/index.html">Home</a></li>
-            <li class="nav-list-item"><a href="/about.html">About</a></li>
-            <li class="nav-list-item"><a href="/content.html">Contact</a></li>
-        </ul>
-    </header>
+        <div class="inner">
+          <p class="logo"><a class="over" href="/index.html">暇人ブログ</a></p>
+          <ul class="navi">
+            <li><a href="/index.html">TOP</a></li>
+            <li><a href="/list/index.html">記事一覧</a></li>
+            <li><a href="/cnt.html">連絡先</a></li>
+            <li><a href="/q.html">質問</a></li>
+          </ul>
+        </div>
+        <button class="sp-navi-toggle"><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="menu">MENU</span><span class="close">CLOSE</span></button>
+      </header>
     <main>{{ content }}</main> 
 </body>
 

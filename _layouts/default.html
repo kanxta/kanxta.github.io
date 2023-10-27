@@ -1,32 +1,35 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="ja">
 
 <head>
-  <meta charset="utf-8">
-  <title>{{ page.title }} - Tdkj.f5si</title>
-  <link rel="stylesheet" href="/main.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<meta charset="UTF-8" />
+	<title>Tdkj.f5si - {{ page.title }}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="/styles/style.css" />
+	<link rel="stylesheet" href="/styles/header.css" />
+	<link rel="stylesheet" href="/main.css" />
 </head>
 
 <body>
-  <script src="/main.js"></script>
-  <header class="site-header">
-    <div class="wrapper site-header__wrapper">
-      <a href="#" class="brand">Brand</a>
-      <nav class="nav">
-        <button class="nav__toggle" aria-expanded="false" type="button">
-          Menu
-        </button>
-        <ul class="nav__wrapper">
-          <li class="nav__item"><a href="/index.html">TOP</a></li>
-          <li class="nav__item"><a href="/list/index.html">記事一覧</a></li>
-          <li class="nav__item"><a href="/cnt.html">連絡先</a></li>
-          <li class="nav__item"><a href="/q.html">質問</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main>{{ content }}</main>
+	<!-- Header Start -->
+	<header class="site-header">
+		<div class="wrapper site-header__wrapper">
+			<a href="#" class="brand">Brand</a>
+			<nav class="nav">
+				<button class="nav__toggle" aria-expanded="false" type="button">
+					menu
+				</button>
+				<ul class="nav__wrapper">
+					<li class="nav__item"><a href="/index.html">TOP</a></li>
+					<li class="nav__item"><a href="/list/index.html">記事一覧</a></li>
+					<li class="nav__item"><a href="/cnt.html">連絡先</a></li>
+					<li class="nav__item"><a href="/q.html">質問</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>{{ content }}</main>
+	<script src="/main.js"></script>
 </body>
 
 </html>

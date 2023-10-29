@@ -6,9 +6,6 @@
   font: inherit;
   vertical-align: baseline
 }
-pre{
-  overflow-x:scroll;
-}
   
 ol,ul {
   list-style: none
@@ -134,6 +131,7 @@ html {
   display: none;
 }
 
+
 @media (min-width: 600px) {
   .button span {
     display: initial;
@@ -198,7 +196,7 @@ p {
 
 img {
   display: block;
-  width: 50%;
+  width: 100%;
 }
 
 main {
@@ -207,6 +205,10 @@ main {
   margin-right: 30%;
   position: relative;
   z-index: 0;
+}
+
+code {
+  font-size: 120%
 }
 
 @media screen and (max-width: 767px) {

@@ -6,7 +6,10 @@
   font: inherit;
   vertical-align: baseline
 }
-
+pre{
+  overflow-x:scroll;
+}
+  
 ol,ul {
   list-style: none
 }

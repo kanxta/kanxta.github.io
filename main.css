@@ -11,6 +11,10 @@ ol,ul {
   list-style: none
 }
 
+header {
+  z-index: 1;
+}
+
 /* 
 ** The Header Media Queries **
 ** Tweak as per your needs **
@@ -66,8 +70,6 @@ ol,ul {
       position: absolute;
       right: 1rem;
       top: 1rem; } }
-
-      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 .wrapper {
   max-width: 1140px;
   padding-left: 1rem;
@@ -87,15 +89,14 @@ a {
   color: #222;
 }
 
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-body {
-  font-family: "Roboto", sans-serif;
-}
-
 .sr-only {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);

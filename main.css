@@ -257,19 +257,18 @@ code {
 
 .darkmode--activated main {
   background-color: #202020;
-  color: #d3d3d3;
 }
 
 .darkmode--activated p, .darkmode--activated h1, .darkmode--activated h2, .darkmode--activated h3 .darkmode--activated h4{
-  color: #ddd;
+  color: #d3d3d3;
 }
 
 .darkmode--activated a {
   text-decoration: underline;
-  color: #555555;
+  color: #bbb;
 }
 
-.darkmode--activated a#path {
-  text-decoration: none;
-  color: #b5b5b5;
+.darkmode--activated main #path a {
+  text-decoration: underline;
+  color: #bbbbbb;
 }

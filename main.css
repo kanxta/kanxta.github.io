@@ -1,4 +1,9 @@
-.site-header, .wrapper site-header__wrapper, .brand, .nav, .nav__wrapper, .nav__item {
+.site-header,
+.wrapper site-header__wrapper,
+.brand,
+.nav,
+.nav__wrapper,
+.nav__item {
   margin: 0;
   padding: 0;
   border: 0;
@@ -6,8 +11,9 @@
   font: inherit;
   vertical-align: baseline
 }
-  
-ol,ul {
+
+ol,
+ul {
   list-style: none
 }
 
@@ -21,25 +27,34 @@ header {
 */
 .brand {
   font-weight: bold;
-  font-size: 20px; }
+  font-size: 20px;
+}
 
 .site-header {
   position: relative;
-  background-color: #def7ff; }
+  background-color: #def7ff;
+}
 
 .site-header__wrapper {
   padding-top: 1rem;
-  padding-bottom: 1rem; }
-  @media (min-width: 600px) {
-    .site-header__wrapper {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-top: 0;
-      padding-bottom: 0; } }
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 600px) {
+  .site-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
 @media (min-width: 600px) {
   .nav__wrapper {
-    display: flex; } }
+    display: flex;
+  }
+}
 
 @media (max-width: 599px) {
   .nav__wrapper {
@@ -52,24 +67,34 @@ header {
     visibility: hidden;
     opacity: 0;
     transform: translateY(-100%);
-    transition: transform 0.3s ease-out, opacity 0.3s ease-out; }
-    .nav__wrapper.active {
-      visibility: visible;
-      opacity: 1;
-      transform: translateY(0); } }
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  }
+
+  .nav__wrapper.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 .nav__item a {
   display: block;
-  padding: 1.5rem 1rem; }
+  padding: 1.5rem 1rem;
+}
 
 .nav__toggle {
-  display: none; }
-  @media (max-width: 599px) {
-    .nav__toggle {
-      display: block;
-      position: absolute;
-      right: 1rem;
-      top: 1rem; } }
+  display: none;
+}
+
+@media (max-width: 599px) {
+  .nav__toggle {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+}
+
 .wrapper {
   max-width: 1140px;
   padding-left: 1rem;
@@ -84,19 +109,11 @@ header {
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-  color: #222;
-}
-
-body {
-  font-family: 'Noto Sans JP', sans-serif;
-}
-
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .sr-only {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
@@ -109,8 +126,8 @@ html {
 
 .button {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   color: #fff;
   background-color: #2fa0f6;
   min-width: 120px;
@@ -143,29 +160,29 @@ html {
   padding: 0.5rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 Main css
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
+#path {
+  color: #bdbdbd;
+}
+
+header a,
+#path a {
+  text-decoration: none;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
 body {
+  font-family: 'Noto Sans JP', sans-serif;
   margin: 0;
   padding: 0;
 }

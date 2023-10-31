@@ -252,17 +252,22 @@ code {
   }
 }
 
-.darkmode--activated body {
+.darkmode--activated main {
   background-color: #202020;
   color: #d3d3d3;
 }
+
+body.darkmode--activated {
+  background-color: #202020;
+}
+
 
 .darkmode--activated a {
   text-decoration: underline;
   color: #555555;
 }
 
-.darkmode--activated #path a {
+.darkmode--activated a#path {
   text-decoration: none;
   color: #b5b5b5;
 }

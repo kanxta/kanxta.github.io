@@ -181,11 +181,6 @@ header a,
   color: #222;
 }
 
-a {
-  text-decoration: none;
-  color: #222;
-}
-
 body {
   font-family: 'Noto Sans JP', sans-serif;
   margin: 0;
@@ -256,19 +251,19 @@ code {
 }
 
 .darkmode--activated main {
-  background-color: #202020;
+  background-color: #222222;
 }
 
 .darkmode--activated p, .darkmode--activated h1, .darkmode--activated h2, .darkmode--activated h3 .darkmode--activated h4{
   color: #d3d3d3;
 }
 
-.darkmode--activated a {
+.darkmode--activated main a {
   text-decoration: underline;
   color: #bbb;
 }
 
 .darkmode--activated main #path a {
-  text-decoration: underline;
+  text-decoration: none;
   color: #bbbbbb;
 }

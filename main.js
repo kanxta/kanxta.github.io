@@ -24,7 +24,7 @@ navToggle.addEventListener("click", function () {
     menu.innerText = "≡"
     navWrapper.classList.remove("active");
   } else {
-  menu.innerText = "‪✕‬"
+  menu.innerText = "✕"
     navWrapper.classList.add("active");
     this.setAttribute("aria-label", "close menu");
     this.setAttribute("aria-expanded", "true");

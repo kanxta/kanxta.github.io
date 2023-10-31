@@ -27,7 +27,7 @@
 			<a href="/index.html" class="brand">Tdkj.f5si</a>
 			<nav class="nav">
 				<div class="nav__toggle" aria-expanded="false" type="button">
-					<span style="font-size: 150%;" id="hum">‪≡</span>
+					<span style="font-size: 150%;" id="hum">≡</span>
 				</div>
 				<ul class="nav__wrapper">
 					<li class="nav__item"><a href="#">Home</a></li>
@@ -39,6 +39,10 @@
 			</nav>
 		</div>
 	</header>
+	<p>{{page.path}}</p>
+	<h1>{{ page.title }}</h1>
+	<hr style="width: 100%;">
+	<p>{{page.date}}</p><br><br>
 	<main>{{ content }}</main>
 	<script src="/main.js"></script>
 </body>

@@ -191,7 +191,10 @@ body {
   margin: 0;
   padding: 0;
 }
-
+main a {
+  text-decoration: underline;
+  color: #000;
+}
 h1 {
   display: block;
   margin: 0, 0, 0, 0;
@@ -257,10 +260,9 @@ code {
   color: #d3d3d3;
 }
 
-body.darkmode--activated {
-  background-color: #202020;
+.darkmode--activated p, .darkmode--activated h1, .darkmode--activated h2, .darkmode--activated h3 .darkmode--activated h4{
+  color: #ddd;
 }
-
 
 .darkmode--activated a {
   text-decoration: underline;

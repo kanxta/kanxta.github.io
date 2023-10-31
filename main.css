@@ -163,6 +163,11 @@ html {
 /*
 Main css
 */
+img {
+  max-height: 50vh;
+  max-width: 100%;
+  border: 5px solid #c4b2ff;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
@@ -231,6 +236,7 @@ code {
 @media screen and (max-width: 767px) {
   img {
     width: 100%;
+    border: 2px solid #c4b2ff;
   }
 
   main {

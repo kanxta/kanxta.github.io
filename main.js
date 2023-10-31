@@ -2,12 +2,16 @@
  * Format Markdown
  */
 window.onload = () => {
-    let elem = document.getElementsByTagName("p");
-    let br = document.createElement("br");
+  addbrelements("p")
+  addbrelements("img")
+}
+function addbrelements(name) {
+  let elem = document.getElementsByTagName(name);
+  let br = document.createElement("br");
 
-    for( var i = 0; i < elem.length; i++  ){
-        elem[i].parentNode.insertBefore(br, elem[i].nextElementSibling);
-    }
+  for (var i = 0; i < elem.length; i++) {
+    elem[i].parentNode.insertBefore(br, elem[i].nextElementSibling);
+  }
 }
 
 /**
@@ -24,7 +28,7 @@ navToggle.addEventListener("click", function () {
     menu.innerText = "≡"
     navWrapper.classList.remove("active");
   } else {
-  menu.innerText = "✕"
+    menu.innerText = "✕"
     navWrapper.classList.add("active");
     this.setAttribute("aria-label", "close menu");
     this.setAttribute("aria-expanded", "true");

@@ -233,6 +233,10 @@ code {
   font-size: 120%
 }
 
+.darkmode-toggle {
+  z-index: 10;
+}
+
 @media screen and (max-width: 767px) {
   img {
     width: 100%;
@@ -248,7 +252,17 @@ code {
   }
 }
 
-.darkmode--activated main {
-  background-color: #000;
-  color: #fff;
+.darkmode--activated body {
+  background-color: #202020;
+  color: #d3d3d3;
+}
+
+.darkmode--activated a {
+  text-decoration: underline;
+  color: #555555;
+}
+
+.darkmode--activated #path a {
+  text-decoration: none;
+  color: #b5b5b5;
 }

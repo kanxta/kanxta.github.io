@@ -10,14 +10,15 @@
 		rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 
 	<!-- and it's easy to individually load additional languages -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
 	<script>hljs.highlightAll();</script>
 
-	
+
 	<link rel="stylesheet" href="/main.css" />
 </head>
 
@@ -39,11 +40,13 @@
 			</nav>
 		</div>
 	</header>
-	<p>{{page.path}}</p>
-	<h1>{{ page.title }}</h1>
-	<hr style="width: 100%;">
-	<p>{{page.date}}</p><br><br>
-	<main>{{ content }}</main>
+	<main>
+		<p id="">{{page.path}}</p>
+		<h1>{{ page.title }}</h1>
+		<hr style="width: 100%;">
+		<p>{{page.date}}</p><br><br>
+		{{ content }}
+	</main>
 	<script src="/main.js"></script>
 </body>
 

@@ -166,6 +166,8 @@ Main css
 img {
   max-height: 50vh;
   max-width: 100%;
+  display: block;
+  height: auto;
   border: 5px solid #c4b2ff;
 }
 
@@ -214,11 +216,6 @@ p {
   display: block;
 }
 
-img {
-  display: block;
-  width: 100%;
-}
-
 main {
   width: 40%;
   margin-left: 30%;
@@ -239,6 +236,7 @@ code {
   img {
     width: 100%;
     border: 2px solid #c4b2ff;
+    display: block;
   }
 
   main {

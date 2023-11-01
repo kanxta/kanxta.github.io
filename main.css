@@ -225,7 +225,7 @@ main {
 }
 
 code {
-  font-size: 120%
+  font-size: 150%
 }
 
 .darkmode-toggle {
@@ -266,6 +266,6 @@ code {
   color: #bbbbbb;
 }
 
-.darkmode-ignore img{
+.darkmode-ignore img, .darkmode--activated img{
   display: block;
 }

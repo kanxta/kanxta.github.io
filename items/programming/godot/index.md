@@ -1,6 +1,6 @@
 ---
 layout: indexs
-title: カテゴリー: Godot
+title: カテゴリー： Godot
 path: <a href="/">home</a> ＞ <a href="/items/programming/">プログラミング</a> ＞ <a href="/items/programming/godot/">Godot</a>
 date: unknow
 ---

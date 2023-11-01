@@ -1,6 +1,6 @@
 ---
 layout: indexs
-title: カテゴリー: プログラミング
+title: カテゴリー： プログラミング
 path: <a href="/">home</a> ＞ <a href="/items/programming/">プログラミング</a>
 date: unknow
 ---

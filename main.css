@@ -265,3 +265,7 @@ code {
   text-decoration: none;
   color: #bbbbbb;
 }
+
+.darkmode-ignore img{
+  display: block;
+}

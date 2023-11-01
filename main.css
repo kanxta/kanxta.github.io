@@ -269,3 +269,7 @@ code {
 .darkmode-ignore img, .darkmode--activated img{
   display: block;
 }
+img, .darkmode-ignore {
+  isolation: isolate;
+  display: block;
+}

@@ -271,5 +271,5 @@ code {
 }
 img, .darkmode-ignore {
   isolation: isolate;
-  display: block;
+  display: block !important;
 }

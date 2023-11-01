@@ -233,12 +233,6 @@ code {
 }
 
 @media screen and (max-width: 767px) {
-  img {
-    width: 100%;
-    border: 2px solid #c4b2ff;
-    display: block;
-  }
-
   main {
     width: 96%;
     margin-left: 2%;

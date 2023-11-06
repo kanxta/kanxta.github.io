@@ -224,6 +224,11 @@ main {
   z-index: 0;
 }
 
+main ul {
+  list-style: disc;
+  color: #000;
+}
+
 code {
   font-size: 150%
 }
@@ -264,6 +269,11 @@ code {
 .darkmode-ignore img, .darkmode--activated img{
   display: block;
 }
+
+.darkmode--activated main li {
+  color: #d3d3d3;
+}
+
 img, .darkmode-ignore {
   isolation: isolate;
   display: block !important;

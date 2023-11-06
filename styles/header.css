@@ -12,6 +12,11 @@
     vertical-align: baseline
 }
 
+header a {
+    text-decoration: none;
+    color: #222;
+}
+
 ol,
 ul {
     list-style: none

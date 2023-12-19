@@ -5,13 +5,6 @@ author:             mixpax
 baseurl:            "/startbootstrap-clean-blog-jekyll"
 url:                "https://kanxta.github.io"
 
-# Social Profiles
-twitter_username:   SBootstrap
-github_username:    kanxta
-facebook_username:  
-instagram_username:  
-linkedin_username:
-
 # Add your google-analytics ID here to activate google analytics
 google_analytics:   G-GF58B65V8S # out your google-analytics code
 

@@ -1,8 +1,0 @@
----
-layout: indexs
-title: カテゴリー： プログラミング
-path: <a href="/">home</a> ＞ <a href="/items/programming/">プログラミング</a>
-date: unknow
----
-<p id="path">全1小カテゴリー</p>
-<h3><a href="./godot/">Godot</a></h3>

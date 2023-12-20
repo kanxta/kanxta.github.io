@@ -2,6 +2,12 @@
 layout: default
 ---
 
+{% if post %}
+  {% assign tags = post.tags %}
+{% else %}
+  {% assign tags = page.tags %}
+{% endif %}
+
 <!-- Page Header -->
 {% if page.background %}
 <header class="masthead"
@@ -23,10 +29,9 @@ layout: default
               on {{ page.date | date: '%B %d, %Y' }} &middot; {% include read_time.html
               content=page.content %}
             </span>
-            <br>
             <div class="post-tags">
               Tags:
-              {% for tag in page.tags %}
+              {% for tag in tags %}
               <a href="/tags#{{ tag | slugize }}">
                 {{ tag }}
               </a>

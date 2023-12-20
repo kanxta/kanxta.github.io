@@ -23,6 +23,14 @@ background: '/img/bg-post.jpg'
     {% endif %}
     on {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}
   </p>
+  <div
+    class="post-tags">
+    {% for tag in tags %}
+      <a href="/tags#{{ tag | slugize }}">
+        {{ tag }}
+      </a>
+    {% endfor %}
+  </div>
 </article>
 
 <hr>

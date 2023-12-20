@@ -4,6 +4,12 @@ title: Posts
 background: '/img/bg-post.jpg'
 ---
 
+{% if post %}
+  {% assign tags = post.tags %}
+{% else %}
+  {% assign tags = page.tags %}
+{% endif %}
+
 {% for post in paginator.posts %}
 
 <article class="post-preview">

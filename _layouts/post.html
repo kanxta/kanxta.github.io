@@ -26,7 +26,7 @@ layout: default
             <br>
             <div class="post-tags">
               Tags:
-              {% for tag in tags %}
+              {% for tag in page.tags %}
               <a href="/tags#{{ tag | slugize }}">
                 {{ tag }}
               </a>

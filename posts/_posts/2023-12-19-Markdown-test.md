@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Markdown test"
-subtitle: "マークダウンで記事投稿してみました。"
+subtitle: "md-post-test"
 date: 2023-12-19 12:05:00 -0400
 background: '/img/posts/06.jpg'
 tags: 

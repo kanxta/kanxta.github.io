@@ -62,9 +62,8 @@ background: '/img/bg-contact.jpg'
   details.forEach((elem) => {
     elem[1].addEventListener('open', () => {
       details.forEach((e) => {
-        if (e[0] !== elem[0]) {
-          e[1].open = false
-        }
+        if (e[0] == elem[0]) return;
+        e[1].open = false
       })
     })
   })

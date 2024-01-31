@@ -55,16 +55,19 @@ background: '/img/bg-contact.jpg'
   {% endfor %}
 </section>
 <script>
-  let details = []
+  let details = [] 
   {% for tag_name in tag_names %}
-    details.push(['{{tag_name}}',document.getElementById('{{tag_name}}')]);
+    details.push('{{tag_name}}')
   {% endfor %}
-  details.forEach((elem) => {
-    elem[1].addEventListener('open', () => {
-      details.forEach((e) => {
-        if (e[0] == elem[0]) return;
-        e[1].open = false
+  window.onload = () => {
+    {% for tag_name in tag_names %}
+      document.getElementById('{{tag_name}}').addEventListener('click', () => {
+        if (!document.getElementById('{{tag_name}}').open) return;
+        details.forEach(detail => {
+          if (detail == '{{tag_name}}') return;
+          document.getElementById(detail).open = false
+        })
       })
-    })
-  })
+    {% endfor %}
+  }
 </script>

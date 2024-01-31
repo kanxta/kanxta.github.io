@@ -23,4 +23,8 @@ tags:
 ## h2
 ### h3
 [link](/)  
+```js
+const hoge = "fuga";
+console.log("this is a test");
+```
 end

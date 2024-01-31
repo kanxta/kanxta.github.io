@@ -62,7 +62,7 @@ background: '/img/bg-contact.jpg'
   window.onload = () => {
     {% for tag_name in tag_names %}
       document.getElementById('{{tag_name}}').addEventListener('click', () => {
-        if (!document.getElementById('{{tag_name}}').open) return;
+        if (document.getElementById('{{tag_name}}').open) return;
         details.forEach(detail => {
           if (detail == '{{tag_name}}') return;
           document.getElementById(detail).open = false

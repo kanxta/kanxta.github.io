@@ -26,5 +26,6 @@ tags:
 ```js
 const hoge = "fuga";
 console.log("this is a test");
+let longcode = () => {document.getElementById("This is long code").innerText = "VeryVerylongCode is here! I will be longer....";window.location.reload();}
 ```
 end

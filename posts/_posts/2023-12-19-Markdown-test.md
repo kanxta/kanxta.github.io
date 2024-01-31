@@ -2,11 +2,9 @@
 layout: post
 title: "Markdown test"
 subtitle: "md-post-test"
-date: 2023-12-19 12:05:00 -0400
+date: 2023-12-19 12:05:00 -0900
 background: '/img/posts/06.jpg'
 tags: 
-- notify
-- template
 - test
 ---
 # マークダウンでの記事投稿テストです。

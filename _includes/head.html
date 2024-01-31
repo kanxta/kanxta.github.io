@@ -8,15 +8,101 @@
     {% else %}{{ site.title | escape }}{% endif %}
   </title>
 
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta name="description"
+    content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
-  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link
+    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
 
   <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="{{"/assets/main.css" | relative_url }}">
+  <link rel="stylesheet" href="{{" /assets/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ " /feed.xml" |
+    relative_url }}">
+  <style>
+    summary {
+      position: relative;
+      display: block;
+      /* 矢印を消す */
+      padding: 10px 10px 10px 30px;
+      /* アイコンの余白を開ける */
+      cursor: pointer;
+      /* カーソルをポインターに */
+      font-weight: bold;
+      background-color: #e2f0f7;
+      transition: 0.2s;
+    }
 
+    summary:hover {
+      background-color: #ccebfb;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+      /* 矢印を消す */
+    }
+
+    /* 疑似要素でアイコンを表示 */
+    summary:before,
+    summary:after {
+      content: "";
+      margin: auto 0 auto 10px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    summary:before {
+      width: 16px;
+      height: 16px;
+      border-radius: 4px;
+      background-color: #1da1ff;
+    }
+
+    summary:after {
+      left: 6px;
+      width: 5px;
+      height: 5px;
+      border: 4px solid transparent;
+      border-left: 5px solid #fff;
+      box-sizing: border-box;
+      transition: .1s;
+    }
+
+    /* オープン時のスタイル */
+    details[open] summary {
+      background-color: #ccebfb;
+    }
+
+    details[open] summary:after {
+      transform: rotate(90deg);
+      /* アイコンを回転 */
+      left: 4px;
+      /* 位置を調整 */
+      top: 5px;
+      /* 位置を調整 */
+    }
+
+    /* アニメーション */
+    details[open] .details-content {
+      animation: fadeIn 0.5s ease;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
 </head>

@@ -42,7 +42,7 @@ background: '/img/bg-contact.jpg'
       <div class="post-tags">
         <span>Tags: </span>
         {% for tag in post.tags %}
-        <a href="/tags#{{ tag | slugize }}">
+        <a href="/tags#{{ tag | slugize }}" class="tagspan">
           {{ tag }}
         </a>
         {% endfor %}

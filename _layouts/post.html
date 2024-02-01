@@ -32,7 +32,7 @@ layout: default
             <div class="post-tags">
               <span>Tags: </span>
               {% for tag in tags %}
-              <a href="/tags#{{ tag | slugize }}">
+              <a href="/tags#{{ tag | slugize }}" class="tagspan">
                 {{ tag }}
               </a>
               {% endfor %}

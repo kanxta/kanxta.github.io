@@ -25,6 +25,28 @@
     relative_url }}">
     <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
   <style>
+    blockquote{
+    position:relative;
+    border-left:3px solid #DA8596;
+    padding-left:10px;
+}
+blockquote:before{
+    position:absolute;
+    font-family:'FontAwesome';
+    content:'\f10d';
+    font-size: 20px;
+    color:#DA8596;
+}
+blockquote p{
+    position:relative;
+    padding-left:30px;
+}
+blockquote cite{
+    display: block;
+    font-size:0.8rem;
+    color:#F8C8B2;
+    text-align:right;
+}
     * {
       font-family: 'Noto Sans JP' !important;
     }

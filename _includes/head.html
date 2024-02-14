@@ -159,5 +159,22 @@ blockquote cite{
       margin-left: 2px;
       margin-right: 2px;
     }
+    .hljs-wrap {
+      position: relative; /* 絶対配置の基準 */
+    }
+
+    code[data-language]::before {
+      content: attr(data-language);
+      position:absolute;
+      top: 0;
+      right: 0;
+      color: #ccc;
+      display: inline-block;
+      padding: 0.5rem;
+    }
+
+    code[data-language] {
+      padding-top: 2rem;
+    }
   </style>
 </head>

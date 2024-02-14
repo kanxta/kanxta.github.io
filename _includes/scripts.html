@@ -13,4 +13,5 @@
   href="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css"
 />
 
-<script>hljs.addPlugin(new CopyButtonPlugin());hljs.addPlugin({'after:highlightElement':({el, result})=>{el.dataset.language=result.language}});hljs.highlightAll();</script>
+<script>hljs.addPlugin(new CopyButtonPlugin());
+hljs.addPlugin({'after:highlightElement': ({ el, result }) => {if(result.language) {el.dataset.language = result.language;}}});hljs.highlightAll();</script>

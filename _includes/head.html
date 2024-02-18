@@ -11,12 +11,6 @@
   <meta name="description"
     content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
-  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
-    type='text/css'>
-  <link
-    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
-    rel='stylesheet' type='text/css'>
-
   <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
   <link rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
@@ -25,7 +19,9 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ " /feed.xml" |
     relative_url }}">
-    <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <style>
     * {
       font-family: 'Noto Sans JP', sans-serif !important;

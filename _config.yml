@@ -2,8 +2,8 @@ title:              いい名前がない
 email:              mixpax4300@gmail.com
 description:        好きな時に好きなだけ更新します
 author:             名無し
-baseurl:            "/startbootstrap-clean-blog-jekyll"
-url:                "https://kanxta.github.io"
+baseurl:            "/"
+url:                "https://blog.tadokorokouji.f5.si"
 
 github_username:    kanxta
 

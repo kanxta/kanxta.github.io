@@ -14,7 +14,7 @@
   <link rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 
-  <link rel="stylesheet" href="{{"/assets/main.css" | relative_url }}">
+  <link rel="stylesheet" href="{{"/assets/main.min.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{"/feed.xml" | relative_url }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,28 +24,28 @@
     * {
       font-family: 'Noto Sans JP', sans-serif !important;
     }
-        blockquote{
-    position:relative;
-    border-left:3px solid #DA8596;
-    padding-left:10px;
-}
-blockquote:before{
-    position:absolute;
-    font-family:'FontAwesome' !important;
-    content:'\f10d';
-    font-size: 20px;
-    color:#DA8596;
-}
-blockquote p{
-    position:relative;
-    padding-left:30px;
-}
-blockquote cite{
-    display: block;
-    font-size:0.8rem;
-    color:#F8C8B2;
-    text-align:right;
-}
+    blockquote{
+        position:relative;
+        border-left:3px solid #DA8596;
+        padding-left:10px;
+    }
+    blockquote:before{
+        position:absolute;
+        font-family:'FontAwesome' !important;
+        content:'\f10d';
+        font-size: 20px;
+        color:#DA8596;
+    }
+    blockquote p{
+        position:relative;
+        padding-left:30px;
+    }
+    blockquote cite{
+        display: block;
+        font-size:0.8rem;
+        color:#F8C8B2;
+        text-align:right;
+    }
     summary {
       position: relative;
       display: block;
